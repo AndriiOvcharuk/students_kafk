@@ -13,7 +13,7 @@ class OrdersController extends Controller
 
         $orders = Order::where('user_id', $userId)->get();
 
-        return view('orders', [
+        return view('orders.list', [
             'orders' => $orders
         ]);
     }

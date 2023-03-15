@@ -21,5 +21,7 @@ Route::get('/', [PagesController::class, 'getHomePage']);
 Route::get('/about_us', [PagesController::class, 'getAboutUsPage']);
 
 Route::get('/users', [UsersController::class, 'getUsersList']);
+Route::get('/users/create', [UsersController::class, 'create']);
+Route::post('/users/store', [UsersController::class, 'store']);
 
 Route::get('/orders', [OrdersController::class, 'getOrders']);
